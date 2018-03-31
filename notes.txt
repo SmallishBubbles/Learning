@@ -1,0 +1,44 @@
+
+----------------------------------- class 3/28 -----------------------------------
+
+DRY - don't repeat yourself
+
+There are usually a lot of ways to do something. 
+Do it as best you know how OR how your organization tells you to
+
+
+user story:
+
+someone creates a scenario and we have to build it out
+eg. "as a user I want to be able to create a grocery list that I can check a box whenever 
+I put that item in my basket."
+old project - waterfall, list everything and do it
+user story - agile - sprints priority oriented vs task oriented
+
+can be pretty vague
+
+href = hyper-text reference
+
+
+Alt text is good if your image doesn't load, but it also helps boost your page 
+because search engines pay attention to the alt text 
+
+Alt helps whatever you are making get found.
+
+Tables:
+
+Table head <thead>
+    Table Row <tr>
+        Column header <th>
+
+Table body <tbody>
+    Table row <tr>
+        Table data <td>        
+
+
+----------------------------------- class 3/31 -----------------------------------
+
+you can put a <style> </style> tag in the HEADER to put all your css styling in to your
+same document, but it isn't really recommended.
+
+whiteboard stuff and then enter it in to check yourself. this is a good way to practice and learn.
