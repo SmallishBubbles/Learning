@@ -3,18 +3,18 @@
     <head>
         <title>Skate</title>
     </head>
-    <body style="background-image: url(./media/background.jpg); background-attachment:fixed; height:auto; background-size:100%;">
+    <body style="background-image: url(./media/background.jpg); background-attachment:fixed; height:auto; background-size:100%; font-family:Goudy Old Style">
         
     <!--header-->
-        <div style="border: 3px solid rgb(109,5,5); height:auto; width:90%; margin:auto; background-color:firebrick; text-align:center; border-radius:10px;">
+        <header style="border: 3px solid rgb(109,5,5); height:auto; width:90%; margin:auto; background-color:firebrick; text-align:center; border-radius:10px; font-family:Impact, Century Gothic, sans-serif;">
             <h1>This page goes out to all the kids who carry skateboards... 
                 But never ride them.</h1>
-        </div>
+        </header>
 
     <!--main body -->
-        <div style="height:auto; width:75%; margin:auto; background-color: rgba(0, 0, 0, 0.7); text-align:center; padding:3%;">
+        <section style="height:auto; width:75%; margin:auto; background-color: rgba(0, 0, 0, 0.7); text-align:center; padding:3%;">
             <div style="color:darkgrey;">
-                <div style="float:left; width:40%; text-align:left; padding:5% 10%">
+                <div style="float:left; width:40%; text-align:left; padding:5% 10%;">
                     <p>
                         From childhood's hour I have not been <br>
                         As others were; I have not seen <br>
@@ -33,7 +33,7 @@
 
                 <div style="float: right; width:40%;">
                     <p>Who is your favorite poet and why?</p>
-                    <textarea id="hunger-message" cols="40" rows="7" style="background-color:firebrick;"></textarea>
+                    <textarea id="hunger-message" cols="40" rows="7" style="background-color:rgb(58, 11, 65); height:auto; width:100%; color:ghostwhite;"></textarea>
 
                     <br>
                     <br>
@@ -69,7 +69,7 @@
 
             <div>
                 <table style="color:darkgray; text-align:center; clear: both;">
-                    <caption style="font-size: 2em;">Starter Pack</caption>
+                    <caption style="font-size: 1.8em; font-family:Impact;">Starter Pack</caption>
                     <thead style="font-size: 1.5em;">
                         <tr>
                             <th>Hair</th>
@@ -94,21 +94,26 @@
                     </tbody>
                 </table>
             </div>
-        </div>
+        </section>
 
 
     <!--media and links-->
-        <div style="border:3px solid rgb(109,5,5); border-radius:5px; background-color: rgb(109,5,5,0.75); height:3em; width:90%; margin:auto;">
-            <div style="display: inline-block; border:2px solid black; border-radius:5px; background-color:black; padding:0.25em; margin:0.5em 10% 0.5em 20%;">
+        <footer style="border:3px solid rgba(109,5,5); border-radius:5px; background-color: rgba(109,5,5,0.75); height:auto; width:90%; margin:auto; text-align:center;">
+            <div style="display: inline-block; border:2px solid black; border-radius:5px; background-color:rgba(0, 0, 0, 0.7); padding:0.25em; margin:0.5em 5%;">
                 <a href="https://www.soemo.co.uk/emo.php">SoEmo</a>
             </div>
-            <div style="display: inline-block; border:2px solid black; border-radius:5px; background-color:black; padding:0.25em; margin:0.5em 10%;">
+            <div style="display: inline-block; border:2px solid black; border-radius:5px; background-color:rgba(0, 0, 0, 0.7); padding:0.25em; margin:0.5em 5%;">
                 <a href="https://www.emowire.com/">EmoWire</a>
             </div>
-            <div style="display: inline-block; border:2px solid black; border-radius:5px; background-color:black; padding:0.25em; margin:0.5em 10%;">
+            <div style="display: inline-block; border:2px solid black; border-radius:5px; background-color:rgba(0, 0, 0, 0.7); padding:0.25em; margin:0.5em 5%;">
                 <a href="http://www.emo-corner.com/">Emo-Corner</a>
             </div>
+            <div>
+                <audio controls autoplay loop>
+                    <source src="./media/Trapt-Headstrong.mp3" type="audio/mpeg"> Audio element not supported by your browser.
+                </audio>
+            </div>
 
-        </div>
+        </footer>
     </body>
 </html>

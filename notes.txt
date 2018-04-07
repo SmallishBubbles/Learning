@@ -42,3 +42,42 @@ you can put a <style> </style> tag in the HEADER to put all your css styling in 
 same document, but it isn't really recommended.
 
 whiteboard stuff and then enter it in to check yourself. this is a good way to practice and learn.
+
+
+
+
+----------------------------------- class 4/4 -----------------------------------
+
+
+HTML has several containers that you can place elements inside of. 
+They all have the same effect, but the different labels makes readability easier.  
+            Here are the containers we discussed in class:
+
+            - nav
+            - header
+            - footer
+            - section
+            - article
+            - aside
+            - div
+            - footer
+
+Make sure you use the appropriate container. 
+For instance, your header should be placed inside of the <header> element. 
+A navigation menu should be placed inside the <nav> container. 
+Advertisements or extra info on your site should be placed in an <aside>.
+
+
+
+CSS cheat sheet:
+
+Element
+  css = element
+Class
+  css = .class
+ID 
+  css = #id
+
+
+
+General idea is that there are 12 columns wide on a page
