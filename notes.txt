@@ -81,3 +81,588 @@ ID
 
 
 General idea is that there are 12 columns wide on a page
+
+
+----------------------------------- class 4/7 -----------------------------------
+
+Aprentee program
+    https://apprenticareers.org/
+    assessment test - interviews - bootcamp (not paid) - job
+
+Viewer for your code:
+    https://repl.it/
+
+
+Can test javascript in browser console!!!!!!
+
+an array is a datastore, can call function from inside (only in javascript)
+
+scope -- kind of inception like how things can affect other things
+
+
+
+Git:
+ACP = add commit push
+
+-------------------------------------------------------
+basic javascript function:
+
+        var nums = 5 + 5
+
+
+        function doNumberStuff(num){
+        return nums;
+        }
+
+        console.log(doNumberStuff())
+
+
+
+----This retuns whatever you put in +1:
+
+        var nums = 6;
+
+        function doNumberStuff(num){
+        return nums + 1;
+        }
+
+        console.log(doNumberStuff(nums))
+
+------------------------------------
+  JavaScript lesson structure:
+
+-In order to understand web development, it is essential to understand the basic principles of programming.
+
+
+What is a program?
+
+-"A list of computer instructions that tell a computer what to do."
+
+
+What is JavaScript?
+
+- The language was introduced in 1995 and used to create programs in Netscape (Netscape was a browser similar to Google Chrome and Internet Explorer).
+
+- Not to be confused with Java.  JavaScript has almost nothing to do with Java except that they're both programming languages.
+
+
+JS has 6 data types
+	1) numbers
+	2) strings
+	3) Booleans (true or false values, can use in conditional statements)
+	4) objects (EVERYTHING is an object in javascript)
+	5) functions 
+	6) undefined
+
+
+Technical career paths
+
+SDET - (Software Design Engineer in Test) write code to test features.They have to be
+       good at both coding and testing.
+
+SDE - Software Design Engineer
+
+Product (and Program) Management - these roles vary. Generally are at least partially
+                                   client facing. Sometimes also involve coding.
+
+<!-- Use classes and IDs to style your resume page -->
+<!-- Go back to your profile that you created and align items. Use each of the 3 alignments at least once. -->
+<!-- Go to http://www.imdb.com/chart/top?ref_=nv_mv_250_6
+	Create a table with 3 rows about the top 3 movies. The table should contain 3 columns containing the following: movie name, year, rating.
+-->
+<!-- Update your profile with the correct containers
+
+---------------------------------------
+
+
+
+******  modulous function *****
+
+example:
+        function doNumberStuff(numbs){
+        return numbs + 1;
+        }
+
+        var numbs = function (a,b){
+        return a + b;
+        }
+
+        console.log(doNumberStuff(numbs(4,5)))
+
+
+
+NAN = not a number
+
+Math.random() returns a random floating point value between 0 and 1
+
+
+the below will return a random whole number between 0 and 100
+
+function random (num){
+  return Math.round(Math.random() * num);
+}
+random (100);
+
+
+function multiplyround (num,num2){
+  return Math.floor (num * num2);
+}
+multiplyround (52,0.8888);
+
+
+
+function remainder (num,num2){
+  return (((num / num2) - Math.floor(num / num2))*num2)
+}
+
+remainder (5,2);
+
+
+
+javascript terminology:
+
+Parameters are variables in a function definition that represent data we can input into the function.
+ inputNumber is a parameter, but when we call multiplyByThirteen(9), the 9 is called an argument. In other words, arguments are provided when you call a function, and parameters receive arguments as their value. When we set the value 9 as the argument, we pass a value to the function.
+block = anything within { }
+
+A function declaration is a function that is bound to an identifier or name.
+  Function declarations require the keyword function, a name, and a function body. You can identify this by the use of function square() and the {} below. Function declarations do not end in a semi-colon.
+
+
+
+
+
+-------------------------------- 4/11 -------------------------------
+javaScript cont.
+
+
+codeWars to prepare for interviews
+  TeamEverythingIsAwesome
+  sort population
+  language; my languages
+  status approved
+  progress: i have not trained on
+  dificulty 8kyu
+
+
+best practice single quotes in javascript, double quotes in HTML
+\ escape character
+str = string
+
+new line: \n
+concatenation: + (remember, there won't be a space in between! add one if needed!)
+
+typeof operator: tells you what kind of thing it is
+eg. typeof(3); will return number
+eg. typeof('3'); will return string
+
+(()) is an object. 
+({}) is also an object, but it's kind of supposed to be an array
+
+
+        operators:
+        function operate () {
+          return 4 == '4';
+        };
+        operate();
+
+        returns true
+
+
+    Operators:
+deep equals === is exactly the same, including the type
+== checks ignoring 'type of'
+!= not the samee
+!== not the same, including the type
+< less
+> greater
+<= less than or equal 
+>= greater than or equal 
+% modulous (remainder)
+/ divide 
++ add or concatenate
+- subtract
+&& both true
+|| either true
+++ add one
+-- subract one
++= add whatever to itself
+-= subract whatever to itself
+
+
+
+lexical order - js assigns numbers to string values
+
+function blabla () {
+return 'cardi b'.length;
+ } 
+    returns a length of 7 (includes spaces)
+
+javascript will treat a 'number' as a string with a +
+but it will treat a 'number' as a number with a -
+
+
+modulous operator again!
+mod gives you remainder!!!!!!
+
+        function mod () {
+          return 4%4 === 0;
+        }
+
+        mod ();
+
+        returns true
+
+------------------------------------- 4/14 ------------------------
+
+javascript has key words to watch out for
+
+
+let (can change)
+var (can change)
+const (don't change ever)
+
+var firstName = 'marisha';
+console.log (firstName);
+would return 'marisha'
+
+
+
+alert = makes a pop-up 
+confirm = pop-up with cancel or OK
+prompt = a pop-up with a type-in area 
+
+
+eg let coolCat = prompt ('who is the coolest cat');
+   // user enters the info 
+console.log (coolCat);
+   // would return whatever the user entered!
+
+DOM = document object model ****************
+
+installable app called powermode, lol
+
+node runs inside your console if you want
+
+
+
+objects and how to use them ............
+
+let projector = {}
+projector.brand = "ViewSonic";
+projector.cost = 5;
+projector.lense = "clear";
+projector.isAvailable = false;
+
+console.log(projector);
+// {brand: 'ViewSonic', cost:5, isAvailable:false, lens:'clear'}
+// => undefined
+
+function howMuch(warehouseItem) {
+
+}
+
+
+
+
+let projector = {}
+projector.brand = "ViewSonic";
+projector.cost = 5;
+projector.lense = "clear";
+projector.isAvailable = false;
+
+
+function howMuch(warehouseItem) {
+  return warehouseItem.cost;
+}
+
+howMuch (projector);
+
+//returns 5
+
+
+to change the cost:
+projector.cost = 6;
+console.log(projector) //just to check
+
+
+
+
+
+dot notation (like above)
+can also use bracket notation []
+
+key value pair ??? is the projector.cost essentially
+
+projector['size'] = 12;
+would add that in to the mix when returning the whole projector to check it
+
+
+
+microsoft leap program
+
+
+
+--------------------------------4.18------------------------------
+
+objects again, concat a numbe practice
+see 4.18file
+
+
+arrays. In an array, you always start at zero. ALWAYS. STARTS AT ZERO.
+0, 1, 2, 3, 4, etc
+
+var contactList = ['Sadie','Fuzz lightyear','Coda'];
+var nums = [3, 2, 5, 8];
+
+
+so 
+console.log(contactList[2]) would return 'Coda'
+
+
+to add to it:
+contactList.push('swag');
+
+will return 4 because now there are 4 items,
+but still 3 positions
+
+            .push adds it to the END of the string.
+
+            .unshift adds it to the FRONT of the string (now in position zero)
+
+            .shift REMOVES the FRONT of the string
+
+            .pop REMOVES the LAST item of the string
+
+
+            .splice(num1, num2) cuts out between those two numbers
+
+
+
+/////////////////////////////////
+
+//arrays. In an array, you always start at zero. ALWAYS. STARTS AT ZERO.
+//0, 1, 2, 3, 4, etc
+
+var contactList = ['Sadie','Fuzz lightyear','Coda'];
+var nums = [3, 2, 5, 8];
+
+//to add to it:
+contactList.push('swag');
+
+//will return 4 because now there are 4 items,
+//but still 3 positions
+
+console.log(contactList);
+
+contactList.unshift('Mr. T');
+
+console.log(contactList);
+
+////////////
+
+make a grocery list
+
+
+-------------------------------------------
+
+scope:
+global vs local
+
+let printCar = function(){
+  var car = 'honda';
+  console.log(car);
+}
+
+in this case, the variable 'car' can ONLY be accessed within the variable. it is local to printCar
+
+let spaceShip = 'the enterprise';
+
+in this case, we can access spaceShip from anywhere, including in any other variables. the scope is global.
+
+
+bad syntax can cause things to be 'out of scope' and not within the correct place
+
+
+command option escape / control alt delete
+get out of an infinite loop!
+
+
+/*
+alert(1);
+alert(2);
+alert(3);
+alert(4);
+alert(5);
+*/
+
+//lots of manual labor
+
+var count = 0;
+
+while (count <= 5) {
+  alert(count);
+  count = count + 1;
+}
+
+//much better because you can expand it as needed and it's more succinct
+
+
+------------- 4/21 ---------------
+
+example of good synax on an even or odd check
+
+
+function even_or_odd (nums){
+  if (nums%2 === 0) {
+    return 'Even';
+  }
+  else if (nums%2 === 1) {
+    return 'Odd';
+  }
+  else return Error('enter a number')
+}
+even_or_odd ('45')
+
+
+
+
+Remove first and last:
+      // original solution
+      function removeChar(str){
+        let myArray = str.split ('');
+        myArray.shift(myArray);
+        myArray.pop(myArray);
+        return myArray.join('');
+      };
+      removeChar('eloquent');
+      //solution after I did a bit more research
+      function removeChar(str){
+      let newString = str.slice(1,str.length-1);
+      return newString;
+      };
+      removeChar('eloquent');
+      // Is everything still too much on one line?
+
+
+Thomas' solution:
+      function removeFirstAndLast (word){
+        var wordsArr = []
+        for (var i = 1; i < word.length; i++){
+          wordsArr.push(word[i]);
+        }
+        return wordsArr.join('')
+      }
+
+      removeFirstAndLast('elephant')
+
+
+Your solution was great, this is another way to do it, but just a few more classes to learn 
+
+
+
+This week's assignment is to create a guessing game!
+
+when someone gets a question wrong - one image
+when someone gets a question right - different image
+
+
+10 questions!
+
+
+
+
+-------------------------- 4/25 ----------------------------
+
+start with kata: opposite number
+
+additional operators. 
+++ adds one
+-- subracts one (decrement)
+
+
+var salary = 90000;
+var bonus = 500;
+
+salary = salary + bonus;
+is the same as
+salary += bonus;
+
+
+
+========= while loops ============
+
+              var num = 0;
+
+              while (num <= 10) {
+                console.log(num);
+                num++;
+              }
+
+
+do while
+
+pretty much never used.
+do (
+  //some task
+) while (condition);
+
+
+var num2 = 0;
+
+do (
+  console.log (num2);
+  num2++;
+) while (num2 <= 10);
+
+
+--- quick sort - you watched a thing about this, remember?
+
+
+
+========= for loops =============
+"for loops are awesome"
+
+    (count; condition; increase/decrease)
+    often used:
+    i = itteration
+
+            for (var i = 0; i <= 10; i++) {
+              console.log(i)
+            }
+
+this is essentially the same funciton as above
+
+DRY = don't repeat yourself
+
+
+
+var contacts = ['a','b','c','d']
+
+var count = 0;
+while (count < contacts.length) {
+  document.write('<p>' + contacts[count] + '<p>');
+  count++;
+}
+
+OR: (this isn't quite right yet)
+for (var i==; i<contacts.length; i++) {
+  document.write('<p>' + contacts[i] + '<p>')
+}
+
+
+
+okay so we made a function that returns the following:
+#
+##
+###
+####
+#####
+
+here is my answer:
+      let hashTag = "";
+      for (var i = 0; i < 5; i++) {
+        document.write('<p>'+(hashTag += "#")+'</p>');
+      }
+
+and yay it was a good answer!
