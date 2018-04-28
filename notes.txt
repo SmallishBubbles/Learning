@@ -660,9 +660,39 @@ okay so we made a function that returns the following:
 #####
 
 here is my answer:
-      let hashTag = "";
+      let hash = "";
       for (var i = 0; i < 5; i++) {
-        document.write('<p>'+(hashTag += "#")+'</p>');
+        document.write('<p>'+(hash += "#")+'</p>');
       }
 
 and yay it was a good answer!
+
+another answer:
+
+  let hashTag = '';
+  for (var i = 0; i <= 5; i++){
+    console.log('#'.repeat(i));
+  }
+
+
+
+  ------------------------------- string manipulation with a for loop
+
+ function stringManipulation (str) {
+  let newStr = [];
+    for (var i = 0; i < str.length; i++){
+      newStr.push('***'+ str[i]);
+    }
+    return newStr.join('');
+  }
+
+  stringManipulation ('yolo');
+
+
+  ------------------------------- review functions
+
+  text editor: adam
+
+---------
+
+  alerts, console.log, prompts, if else statements,
