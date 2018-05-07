@@ -1,0 +1,30 @@
+html {
+    background-color: #d1e2ff;
+}
+
+body {
+    font-family: Verdana, sans-serif;
+}
+
+
+.center {
+    text-align: center;
+}
+
+
+.display-pic {
+    width: 9vw;
+    height: auto;
+    border-radius: 10px;
+}
+
+
+#picture-grid{
+    width: 85%;
+    padding: 2%;
+    margin: auto;
+    color: transparent; /* this is because there are some commas displaying.
+    I think they have something to do with the data in my array being separated by commas...
+    I could get the commas to move around (be above, below, or between each row of my table)
+    but I couldn't get them to go away completely... */
+}

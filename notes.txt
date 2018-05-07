@@ -696,3 +696,129 @@ another answer:
 ---------
 
   alerts, console.log, prompts, if else statements,
+
+
+
+
+  ------------------------------------ 4/28 --------------------------------------
+
+
+do codewars every day!
+filter by popular
+
+
+once you can consistantly solve 6's, you can probably get a junior job
+
+
+
+find smallest:
+function findSmallestInt(args) {
+  let smallest = args[0];
+  for (var i=0; i<args.length; i++) {
+  if (args[i] < smallest){
+    smallest = args[i];
+    } 
+  }
+  return smallest
+}
+
+
+findSmallestInt ([4,7,2,6]);
+
+
+----------
+
+grow with google -- https://grow.google/developers/
+
+beginner course, don't need to know anything
+
+you can get in via scholarship. approx 12 hours (at least) per week
+
+deadlines on projects, but they're fairly soft deadlines
+
+
+--------------------------------------- 5/2 -------------------------------------------
+
+push adds to end, unsift adds to start
+remember, you can make your for loop go backwards too!
+i=whatever.length-1, i >= 0, i--
+
+
+scope.
+
+What is scope?
+The idea of scope is very simple: scope tells us where a piece of data is accessible.
+There are two kinds of scope: global and local.  
+
+Global scope:
+A variable with "global scope" can be accessed from anywhere in our program.  
+
+Local scope:
+A variable created inside of a function has "local scope." It can only be accessed from 
+inside the function it was created in.
+
+
+This variable has global scope because it wasn't created inside a function.
+Variables that are global can be accessed from anywhere. For example, we're 
+Variables created within a function can only be accessed within that function
+Because localVariable was created inside createLocalScope(), it can't be accessed
+  outside of that function.  The below code will fail.
+Scope affects not just variables, but functions as well. A function nested within
+  another function can only be accessed inside of that function.
+
+
+          LISTEN TO FUN FUN FUNCTION!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+
+function constructor!
+
+// this is a function constructor
+function myFunction(arg1, arg2) {
+  this.firstName = arg1;
+  this.lastName = arg2;
+}
+
+// this creates a new object
+var x = new myFunction ("john", "doe");
+x.firstName;
+
+
+      /*
+      IN CLASS ASSIGNMENT
+
+      Steps:
+      1. Create a global variable. 
+      2. Create a global function that logs that variable.
+      3. Create a function nested inside the previous function.
+      4. Inside the nested function, create a variable called local;
+        the value of local should be the string 'local var.'
+      5. Log local var to the console.
+      */
+
+
+      let globalVar = "chicken soup";
+
+      function globalFunc () {
+        console.log (globalVar);
+        function localFunc () {
+          let localVar = "local var"
+          console.log (localVar);
+        }
+        localFunc ();
+      }
+
+      globalFunc ();
+
+
+
+-------------------------- 5/5 ---------------------------------
+
+constructor functions 
+  object constructors
+  this specifies scope
+
+put whatever input in, it creates the object for you.
+
+
+
