@@ -1,0 +1,297 @@
+{
+"cards":[
+    { 
+        "id": 1,
+        "word": "IDD / IDE",
+        "definition": "Integrated development environment"
+    },
+    { 
+        "id": 2,
+        "word": "DOM",
+        "definition": "document object model"
+    },
+    { 
+        "id": 3,
+        "word": "HTML",
+        "definition": "Hyper - text markup language"
+    },
+    { 
+        "id": 4,
+        "word": "CSS",
+        "definition": "Cascading style sheets"
+    },
+    { 
+        "id": 5,
+        "word": "Terminal / Command line",
+        "definition": "A text - based interface to the system"
+    },
+    { 
+        "id": 6,
+        "word": "Shell",
+        "definition": "The part of your operating system that defines how the terminal will behave / look"
+    },
+    { 
+        "id": 7,
+        "word": "Bash",
+        "definition": "Bourne Again SHell"
+    },
+
+    { 
+        "id": 8,
+        "word": "DRY",
+        "definition": "Don 't repeat yourself"
+    },
+    { 
+        "id": 9,
+        "word": "href",
+        "definition": "Hyper - text reference"
+    },
+    { 
+        "id": 10,
+        "word": "User story",
+        "definition": "the scenario that the hypothetical 'user' wants to see on the page - you have to build it out. Can be detailed or vague."
+    },
+    { 
+        "id": 11,
+        "word": "Alt text",
+        "definition": "text that displays when the browser can't load the element or for impared users. This text is also a great way to get found in search results."
+    },
+    { 
+        "id": 12,
+        "word": "HTML containers",
+        "definition": "The commonly used sections that compose your HTML file. Containers help with readability and organization"
+    },
+    { 
+        "id": 13,
+        "word": "Attributes",
+        "definition": "the extra information inside an HTML element that povides additional data."
+    },
+    { 
+        "id": 14,
+        "word": "CSS selectors",
+        "definition": "Element / class / id : the selector determining which bits of the HTML page will be styled. Element seletcs all of that particular type of element, Class (.) selects all elements with the that class attribute, and ID (#) seletcs only the particular element with that ID listed."
+    },
+
+    { 
+        "id": 15,
+        "word": "NAN",
+        "definition": "Not a Number"
+    },
+    { 
+        "id": 16,
+        "word": "SDET",
+        "definition": "Software Design Engineer in Test"
+    },
+    { 
+        "id": 17,
+        "word": "SDE",
+        "definition": "Software Design Engineer"
+    },
+    { 
+        "id": 18,
+        "word": "Program",
+        "definition": "A list of computer instructions that tell a computer what to do."
+    },
+    { 
+        "id": 19,
+        "word": "ACP (GIT)",
+        "definition": "add commit push"
+    },
+    { 
+        "id": 20,
+        "word": "camelCasing",
+        "definition": "camelCasingthe standard style of capitalization in JavaScript, where theLaterWordsAreInCaps. because it looks like camelHumps."
+    },
+    { 
+        "id": 21,
+        "word": "Interpolate",
+        "definition": "insert"
+    },
+
+    { 
+        "id": 22,
+        "word": "Argument",
+        "definition": "the input, eg the 9 in multiply(9)"
+    },
+    { 
+        "id": 23,
+        "word": "Parameter",
+        "definition": "variables in a function name that recieve an input"
+    },
+    { 
+        "id": 24,
+        "word": "Function declaration",
+        "definition": "a function that is bound to an identifier or name"
+    },
+    { 
+        "id": 25,
+        "word": "Modulous operator",
+        "definition": "% , finds the remainder"
+    },
+    { 
+        "id": 26,
+        "word": "Operators",
+        "definition": "the symbols used to assign values, compare values, perform arithmetic operations, etc."
+    },
+    { 
+        "id": 27,
+        "word": "Lexical order",
+        "definition": "the numerical value assigned to strings is based off of the first letter.This is the mathematical term for alphabetical order."
+    },
+    { 
+        "id": 28,
+        "word": "Boolean",
+        "definition": "true and false values"
+    },
+
+    { 
+        "id": 29,
+        "word": "Scope",
+        "definition": "the degree to which an object is accessible by other functions.Eg.an object within a function is local to that function, where as an object outside of all functions has global scope."
+    },
+    { 
+        "id": 30,
+        "word": "Loops",
+        "definition": "while loops and for loops let you perform an action multiple times, or only in certain cases."
+    },
+    { 
+        "id": 31,
+        "word": "Itteration",
+        "definition": "i, the count commonly used in for loops"
+    },
+    { 
+        "id": 32,
+        "word": "API",
+        "definition": "application programing interface"
+    },
+    { 
+        "id": 33,
+        "word": "DBMS",
+        "definition": "data base management system"
+    },
+    { 
+        "id": 34,
+        "word": "Front end",
+        "definition": "“client - side” development, where the focus is on what users see"
+    },
+    { 
+        "id": 35,
+        "word": "Open-source",
+        "definition": "software that is available for public use, change, and improvement"
+    },
+
+    { 
+        "id": 36,
+        "word": "This",
+        "definition": "specifies the object or variable within that particular scope.changes when called in a different location."
+    },
+    { 
+        "id": 37,
+        "word": "Constructor function",
+        "definition": "a function that creates a new object"
+    },
+    { 
+        "id": 38,
+        "word": "Global",
+        "definition": "accessable from any location"
+    },
+    { 
+        "id": 39,
+        "word": "Local",
+        "definition": "accessable only within the object"
+    },
+    { 
+        "id": 40,
+        "word": "Event listener",
+        "definition": "'listens' for a specific event to happen on the web page, which calls the action assigned"
+    },
+    { 
+        "id": 41,
+        "word": "Higher order function",
+        "definition": "functions within functions.some examples are the functions you can add within.filter.map and.reduce"
+    },
+    {
+        "id": 42,
+        "word": "Arity",
+        "definition": "the number of expected arguments in a function. Eg. function(a, b, c) has an arity of ."
+    },
+   
+    { 
+        "id": 43,
+        "word": "Regex",
+        "definition": "regular expression"
+    },
+    { 
+        "id": 44,
+        "word": "Dev",
+        "definition": "developer"
+    },
+    { 
+        "id": 45,
+        "word": "PM",
+        "definition": "project manager"
+    },
+    { 
+        "id": 46,
+        "word": "JSX",
+        "definition": "a syntax extension for JavaScript to be used with React. JSX is not 'real' JavaScript, so it needs to go through a compiler so that the browser will know what to do with it."
+    },
+    { 
+        "id": 47,
+        "word": "Foo / bar / foobar",
+        "definition": "common placeholder names when the name is temporary or unimportant. Used to help stress the concept or idea rather than the function itself."
+    },
+    { 
+        "id": 48,
+        "word": "Virtual DOM",
+        "definition": "a virtual copy of the actual DOM which allows React to update only changed objects. it does this by diffing."
+    },
+    { 
+        "id": 49,
+        "word": "Diffing",
+        "definition": "a change updates the entire virtual DOM, which then is compared to a pre-snapshot. Only changed objects get updated in the real DOM."
+    },
+
+    { 
+        "id": 50,
+        "word": "Conditionals",
+        "definition": "expressions that are only executed under certain conditions"
+    },
+    { 
+        "id": 51,
+        "word": "Method",
+        "definition": "we can write methods, and js also includes available methods. Essentially a built-in function / a function built in to an object"
+    },
+    { 
+        "id": 52,
+        "word": "Recursion",
+        "definition": "a function that calls itself as part of the function. Works using built-in stacks."
+    },
+
+    { 
+        "id": 53,
+        "word": "json file",
+        "definition": "a file that contains a set of data. Arranged in an array, commonly with multiple key values."
+    },
+    { 
+        "id": 54,
+        "word": "Preload",
+        "definition": "loeds data before use to help speed up page loading time."
+    },
+    { 
+        "id": 55,
+        "word": "CDN",
+        "definition": "content delivery network"
+    },
+    { 
+        "id": 56,
+        "word": "Components",
+        "definition": "small, reusable pieces of code that return a React element to be rendered to the page."
+    },
+    { 
+        "id": 57,
+        "word": "Props",
+        "definition": "inputs to a component or function. Used to pass data down from a parent to a child."
+    }
+]
+}

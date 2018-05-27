@@ -1,13 +1,5 @@
 import React from 'react';
-import styled from 'styled-components';
-
-
-let ButtonContainer = styled.div`
-`
-
-let Btn = styled.button`
-`
-
+import './drawbutton.css'
 
 class DrawButton extends React.Component{
     constructor(props){
@@ -23,9 +15,9 @@ class DrawButton extends React.Component{
 
     render (props){
         return (
-            <ButtonContainer>
-                <Btn onClick={this.drawCard}> Draw Card </Btn>
-            </ButtonContainer>
+            <div>
+                <button className="btn" onClick={this.drawCard}> Draw Card </button>
+            </div>
         )
     }
 }

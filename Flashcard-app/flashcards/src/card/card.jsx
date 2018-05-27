@@ -1,43 +1,24 @@
 import React from 'react';
-import styled from 'styled-components';
-
-
-const CardContainer = styled.div`
-`
-
-const FlashCard = styled.div`
-`
-
-const Front = styled.div`
-`
-
-const Back = styled.div`
-`
-
-const Word = styled.div`
-`
-
-const Definition = styled.div`
-`
+import './card.css';
 
 
 
 const Card = (props) => (
-    <CardContainer> 
-        <FlashCard>
-            <Front>
-                <Word>
+    <div className="card-container"> 
+        <div className="card">
+            <div className="front">
+                <div className="word">
                     {props.word}
-                </Word>
-            </Front>
+                </div>
+            </div>
 
-            <Back>
-                <Definition>
+            <div className="back">
+                <div className="definition">
                     {props.definition}
-                </Definition>
-            </Back>
-        </FlashCard>
-    </CardContainer>
+                </div>
+            </div>
+        </div>
+    </div>
 
 )
 
