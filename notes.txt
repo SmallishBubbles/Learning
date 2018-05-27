@@ -1,16 +1,19 @@
 
+
+
+
 ----------------------------------- class 3/28 -----------------------------------
 
 DRY - don't repeat yourself
 
-There are usually a lot of ways to do something. 
+There are usually a lot of ways to do something.
 Do it as best you know how OR how your organization tells you to
 
 
 user story:
 
 someone creates a scenario and we have to build it out
-eg. "as a user I want to be able to create a grocery list that I can check a box whenever 
+eg. "as a user I want to be able to create a grocery list that I can check a box whenever
 I put that item in my basket."
 old project - waterfall, list everything and do it
 user story - agile - sprints priority oriented vs task oriented
@@ -20,8 +23,8 @@ can be pretty vague
 href = hyper-text reference
 
 
-Alt text is good if your image doesn't load, but it also helps boost your page 
-because search engines pay attention to the alt text 
+Alt text is good if your image doesn't load, but it also helps boost your page
+because search engines pay attention to the alt text
 
 Alt helps whatever you are making get found.
 
@@ -33,7 +36,7 @@ Table head <thead>
 
 Table body <tbody>
     Table row <tr>
-        Table data <td>        
+        Table data <td>
 
 
 ----------------------------------- class 3/31 -----------------------------------
@@ -49,8 +52,8 @@ whiteboard stuff and then enter it in to check yourself. this is a good way to p
 ----------------------------------- class 4/4 -----------------------------------
 
 
-HTML has several containers that you can place elements inside of. 
-They all have the same effect, but the different labels makes readability easier.  
+HTML has several containers that you can place elements inside of.
+They all have the same effect, but the different labels makes readability easier.
             Here are the containers we discussed in class:
 
             - nav
@@ -62,9 +65,9 @@ They all have the same effect, but the different labels makes readability easier
             - div
             - footer
 
-Make sure you use the appropriate container. 
-For instance, your header should be placed inside of the <header> element. 
-A navigation menu should be placed inside the <nav> container. 
+Make sure you use the appropriate container.
+For instance, your header should be placed inside of the <header> element.
+A navigation menu should be placed inside the <nav> container.
 Advertisements or extra info on your site should be placed in an <aside>.
 
 
@@ -75,7 +78,7 @@ Element
   css = element
 Class
   css = .class
-ID 
+ID
   css = #id
 
 
@@ -151,7 +154,7 @@ JS has 6 data types
 	2) strings
 	3) Booleans (true or false values, can use in conditional statements)
 	4) objects (EVERYTHING is an object in javascript)
-	5) functions 
+	5) functions
 	6) undefined
 
 
@@ -256,7 +259,7 @@ typeof operator: tells you what kind of thing it is
 eg. typeof(3); will return number
 eg. typeof('3'); will return string
 
-(()) is an object. 
+(()) is an object.
 ({}) is also an object, but it's kind of supposed to be an array
 
 
@@ -276,10 +279,10 @@ deep equals === is exactly the same, including the type
 !== not the same, including the type
 < less
 > greater
-<= less than or equal 
->= greater than or equal 
+<= less than or equal
+>= greater than or equal
 % modulous (remainder)
-/ divide 
+/ divide
 + add or concatenate
 - subtract
 && both true
@@ -295,7 +298,7 @@ lexical order - js assigns numbers to string values
 
 function blabla () {
 return 'cardi b'.length;
- } 
+ }
     returns a length of 7 (includes spaces)
 
 javascript will treat a 'number' as a string with a +
@@ -328,13 +331,13 @@ would return 'marisha'
 
 
 
-alert = makes a pop-up 
+alert = makes a pop-up
 confirm = pop-up with cancel or OK
-prompt = a pop-up with a type-in area 
+prompt = a pop-up with a type-in area
 
 
 eg let coolCat = prompt ('who is the coolest cat');
-   // user enters the info 
+   // user enters the info
 console.log (coolCat);
    // would return whatever the user entered!
 
@@ -416,7 +419,7 @@ var contactList = ['Sadie','Fuzz lightyear','Coda'];
 var nums = [3, 2, 5, 8];
 
 
-so 
+so
 console.log(contactList[2]) would return 'Coda'
 
 
@@ -557,7 +560,7 @@ Thomas' solution:
       removeFirstAndLast('elephant')
 
 
-Your solution was great, this is another way to do it, but just a few more classes to learn 
+Your solution was great, this is another way to do it, but just a few more classes to learn
 
 
 
@@ -576,7 +579,7 @@ when someone gets a question right - different image
 
 start with kata: opposite number
 
-additional operators. 
+additional operators.
 ++ adds one
 -- subracts one (decrement)
 
@@ -717,7 +720,7 @@ function findSmallestInt(args) {
   for (var i=0; i<args.length; i++) {
   if (args[i] < smallest){
     smallest = args[i];
-    } 
+    }
   }
   return smallest
 }
@@ -748,18 +751,18 @@ scope.
 
 What is scope?
 The idea of scope is very simple: scope tells us where a piece of data is accessible.
-There are two kinds of scope: global and local.  
+There are two kinds of scope: global and local.
 
 Global scope:
-A variable with "global scope" can be accessed from anywhere in our program.  
+A variable with "global scope" can be accessed from anywhere in our program.
 
 Local scope:
-A variable created inside of a function has "local scope." It can only be accessed from 
+A variable created inside of a function has "local scope." It can only be accessed from
 inside the function it was created in.
 
 
 This variable has global scope because it wasn't created inside a function.
-Variables that are global can be accessed from anywhere. For example, we're 
+Variables that are global can be accessed from anywhere. For example, we're
 Variables created within a function can only be accessed within that function
 Because localVariable was created inside createLocalScope(), it can't be accessed
   outside of that function.  The below code will fail.
@@ -788,7 +791,7 @@ x.firstName;
       IN CLASS ASSIGNMENT
 
       Steps:
-      1. Create a global variable. 
+      1. Create a global variable.
       2. Create a global function that logs that variable.
       3. Create a function nested inside the previous function.
       4. Inside the nested function, create a variable called local;
@@ -814,11 +817,257 @@ x.firstName;
 
 -------------------------- 5/5 ---------------------------------
 
-constructor functions 
+constructor functions
   object constructors
   this specifies scope
 
 put whatever input in, it creates the object for you.
 
 
+
+------------------- 5/9 -------------
+
+
+see in-class may9 folder for a button listener and creation
+
+
+angular (not going over. Interested? learn it yoself!)
+we'll be doing react instead :)
+
+
+
+new react app in users/marisha.hoza/lesson-1
+
+load the app with:
+npm start
+
+
+react was created by facebook
+
+
+
+
+regex = regular expression
+
+
+we'll be doing react instead of _____ a-something
+
+create react app makes the new app (this is all you have to do!)
+
+`npm install -g create-react-app`
+`create-react-app lesson-1`
+
+
+              npm start
+to run the app.
+
+
+Currently my lesson 1 folder is in
+users/marisha.hoza/lesson-1
+
+
+react is a library. you can import a multitude of things. You always need
+import React, { Component } from 'react';
+at the top of every page
+
+
+
+basically this is very useful:
+
+        import React, { Component } from 'react';
+        import logo from './logo.svg';
+        import './App.css';
+
+        class App extends Component {
+          render() {
+            return (
+              <div className="App">
+                <header className="App-header">
+                  <img src={logo} className="App-logo" alt="logo" />
+                  <h1 className="App-title">Welcome to React</h1>
+                </header>
+                <p className="App-intro">
+                  To get started, edit <code>src/App.js</code> and save to reload.
+                </p>
+              </div>
+            );
+          }
+        }
+
+        export default App;
+
+
+
+virtual DOM = puts your stuff on a page for you, without the need for html file!
+
+most of the goodies happen in the App.js file. the render essentially IS the html file
+
+
+
+final project will be assigned when we start node
+
+
+------------------------------ 5/12 --------------------------------
+
+use props:
+
+components
+
+app is a component, but now we're going to create a new component and pass something through it
+component inside component
+
+
+props.name
+
+the input IS the props, the .name is how it knows how to use it
+
+
+
+
+react only renders what you need to render.
+angular tends to re-load the entire page when you make a change,
+vs react only re-loading the changed bit
+
+
+
+write 5 components;
+each component is a separate function, you can work them in together
+
+this is an example component:
+function Welcome2(props) {
+  return <h3>Welcome, {props.name2}</h3>
+}
+
+
+
+classes help separate components. we'll get there soon.
+
+
+      camelCase
+      ConstructorFunction
+      kebab-case
+      snake_Case
+
+
+Play around with node! <?? react?? DO IT.
+
+**********************************************************************
+*********************** final project!! ***********************
+**********************************************************************
+      build portfolio/blog
+
+      Front end:
+        Navigation - component (present on all pages? just overview mountains?)
+        Blog - component (TBD)
+        Portfolio - component (imagination ocean)
+        AboutMe - component (about me forest)
+        Resume - component (work history river)
+
+      Back end:
+        CRUD Router (create read update delete)
+        Blog
+        Portfolio/Project
+        About Me
+        Resume
+
+**********************************************************************
+**********************************************************************
+**********************************************************************
+
+
+jsx must use "className" instead of "class"
+jsx self-closing tags MUST include the slash at the end.
+jsx event listeners are written in camelCase (opposed to html all lowercase)
+jsx if statements DO NOT WORK
+jsx conditionals instead: use the if statement outside of JSX.
+jsx conditionals instead: the ternary operator.
+      valuated as either "truthy" or "falsy." If x is truthy, then the entire ternary operator returns y. If x is falsy, then the entire ternary operator returns z
+jsx conditionals instead: the && operator.
+      works best when its a "do this or do nothing" situation rather than a "do this OR do that" situation.
+use .map to make arrays into jsx elements
+jsx keys - similar to IDs in that they should be unique. Does nothing you can technically see...
+      use when items need to have memory (eg when they need to remember if they were checked off a list)
+      or when items order might be shuffled
+
+
+
+--------------------------- in-class 5/16 -------------------------------
+
+javaScript class - more object oriented style. kind of a constructor
+
+documentation is important!!!
+
+research site hosting... so that you can actually publish your site :)
+heroku - azure? - AWS?
+
+!!!!!!!!!!!!! learn react native :) apps for your phone!! !!!!!!!!!!!!!!!!
+
+
+------------------------ 5/19 --------------------
+routing :)
+
+
+props is magic, lol...
+
+
+{this.props.name}
+this is the scope, props is magic, and name is just whatever the argument in the function is
+
+
+install components like:
+npm install -S styled-components
+
+the -S saves it in just that directory.
+
+
+
+------------------------- 5/23 -------------------------
+
+node express mango ??
+  back end!! :)
+
+
+json file 
+preload loads data before to help speed
+
+a json file is basically a giant array. can have a name, doesn't "need" one.
+
+
+
+
+-------------- 5/26
+
+
+recursion - a function that calls itself
+uses built-in stacks to work (first in, last out)
+calling function within itself
+
+eg:
+
+function factorial(num)  
+{  
+    // If the number is less than 0, reject it.  
+    if (num < 0) {  
+        return -1;  
+    }  
+    // If the number is 0, its factorial is 1.  
+    else if (num == 0) {  
+        return 1;  
+    }  
+    // Otherwise, call this recursive procedure again.  
+    else {  
+        return (num * factorial(num - 1));  
+    }  
+}  
+
+var result = factorial(8);  
+document.write(result);  
+
+// Output: 40320  
+
+
+
+
+binary search trees 
+singly linked lists 
 
