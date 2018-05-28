@@ -1,0 +1,56 @@
+body {
+  background-image: url(http://www.wildtextures.com/wp-content/uploads/2011/10/wildtextures-green-leaf-original-file.jpg);
+  background-repeat: no-repeat;
+  background-size: 100vw;
+}
+
+.box {
+  display: inline-block;
+  border: 1px solid black;
+  width: 15px;
+  height: 15px;
+  margin-left: -1px;
+  margin-bottom: -1px;
+}
+
+.off {
+  background-color: #2e3200;
+}
+
+.on {
+  background-color: #9eb501;
+}
+
+.box:hover {
+  background: #eaf5e8;
+}
+
+.center {
+  margin: auto;
+  display: table;
+  margin-top: 10px;
+}
+
+.grid {
+  width: 150px;
+  line-height: 0;
+  margin: auto;
+  box-shadow: 0px 0px 30px #212400;
+  margin-top: 20px;
+}
+
+h1, h2, h3, h4 {
+  color: white;
+  margin: auto;
+  text-align: center;
+  width: 50%;
+  margin-top: 10px;
+}
+
+h4 {
+  margin-top: 0px;
+}
+
+
+
+
