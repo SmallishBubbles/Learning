@@ -1040,7 +1040,7 @@ a json file is basically a giant array. can have a name, doesn't "need" one.
 
 recursion - a function that calls itself
 uses built-in stacks to work (first in, last out)
-calling function within itself
+
 
 eg:
 
@@ -1071,3 +1071,318 @@ document.write(result);
 binary search trees 
 singly linked lists 
 
+
+
+-------------------------------- May 30 -------------------------
+running js in your terminal:
+
+navigate to folder 
+"node whateverFileName.extension"
+
+
+
+
+node
+v8 is the engine that runs chrome. a google developer tood v8 and took it out of the browser. thus, node
+node is a client
+allows you to run js outside of a browser
+it's about 5 years old now
+
+"node developer" basically means someone who can write back-end code
+node / express / something
+
+express: a back-end routing framework
+
+CRUD = create, read, update, delete
+
+RESTful API = representational state transfer API (application programming interface)
+
+want to get put post delete
+
+
+
+node is the tool, express is the framework
+express creates the API
+
+mongo is the database side (a database side, can use any with node/express)
+
+
+app on phone > route (API node/express layer. does more than route but lol not talk about that right now) 
+                > database (drawns cylinder with layers) 
+        done with routing IDs
+
+design a "schema" in the node/express api layer
+
+
+express cannot live without node
+
+
+
+create file server.js
+npm init 
+package name
+version
+description
+entry point
+test command
+git repository
+keywords
+
+
+npm install -S express
+
+
+touch server.js (or make file however)
+var express = require('express')
+
+GIT IGNORE LINKY LINK
+https://www.gitignore.io/
+
+add .env to the git ignore file
+eg react, windows, mac, linux, etc
+
+
+handy dandy node documentation:
+https://nodejs.org/api/index.html
+
+handy dandy express
+https://expressjs.com/
+
+
+node server.js
+returns party at port 3000
+
+go to in browser:
+localhost: 3000
+on the page will be hey team hey!
+
+
+ctrl C to exit/cancel what's running in your terminal
+killall node 
+will kill all things running
+
+
+"dunder durname" == __dirname (two underscores)
+
+
+node works in order
+
+
+---------------------- june9 ---------------------------
+
+not mongo --- PRISMA
+
+
+prisma graphql
+yarn
+
+routes - CRUD (create read update delete)
+
+
+ui / client/ app
+
+feature / node (express routes) / API
+
+REST = representational state transfer (ideally want only CRUD)
+
+rest has one route per table
+
+
+create ==>
+read <==
+update ==> (old route) ==> (new route)
+delete ==> 
+
+
+multiple tables/data need to be linked by a uniqe identifier
+
+
+graph ql helps you pull only specific bits of data
+
+
+
+
+
+
+relationships between models (tables, data)
+
+eg libraries 
+
+Books:      Authors: (can have many books)      Genres:
+  title       *books (array)                    *books (many, array)
+  author      name                              *authors (many)
+  genre
+
+ 
+one author can have many books (one to many relationship)
+Everything will have a unique id
+
+
+article 1:1 (one article has one author)
+comments 
+likes
+etc
+
+
+
+
+installing stuff:
+go to your directory
+brew install yarn
+yarn --version
+
+mkdir new folder
+cd to new folder
+yarn init -y (saves package.json)
+
+yarn add graphql-yoga 
+
+
+
+go to index.js file
+(trust me, all the goodies are there!)
+
+
+
+node src/index.js (start server)
+
+go to localhost:4000/ in your browser :)
+
+example:
+query {
+  info
+}
+schema tab
+
+
+killall node to close
+
+
+
+-------------------------- 6/13 ------------------------
+
+node src/index.js
+
+stop server with control + c (inside same)
+
+install prisma:
+yarn global add prisma@1.6.3
+
+in app folder:
+mkdir database
+prisma init
+
+
+change contents of prisma.yml to:
+
+# The service name, this will be part of the endpoint of the Prisma API
+service: skillsApp
+
+# The deployment stage, this will also be part of the API endpoint
+stage: dev
+
+# Points to the file that holds your data model
+datamodel: datamodel.graphql
+
+# You can only access the API when providing JWTs that are signed with this secret
+secret: mysecret123
+
+
+
+in database:
+  prisma deploy (first one)
+
+  prisma token
+
+
+restart server
+  change link to link from prisma deploy
+
+  in playground HTTP headers:
+  {
+  "Authorization": "Bearer __TOKEN__"
+  }
+
+  replace Bearer __TOKEN__ with token from prisma token
+
+
+
+//run this mutation
+  mutation {
+    createLink(data: {
+      url: "www.prisma.io"
+      description: "Prisma turns your database into a GraphQL API"
+    }) {
+      id
+    }
+  }
+
+//query this mutation
+  query {
+    links {
+      id
+      url
+      description
+    }
+  }
+
+
+
+pushing stuff to a new empty array is called "rubber ducking"
+
+
+
+
+
+june 30th ------------------------------------------------
+
+
+
+//////////// possible project schema thingy
+
+# type User {
+#   id: ID! @unique
+#   name: String!
+#   email: String! @unique
+#   password: String!
+#   blogs: [Blog!]!
+#   comments: [Comment!]!
+# }
+
+
+# # for blog section
+
+# type Blog {
+#   id: ID! @unique
+#   author: User!
+#   createdAt: DateTime!
+#   title: String!
+#   content: String!
+#   comments: [Comment!]!
+#   published: Boolean! @default(value: "false")
+# }
+
+# type Comment {
+#   id: ID! @unique
+#   blog: Blog!
+#   user: User!
+#   createdAt: DateTime!
+#   comment: String!
+# }
+
+
+# # for skill section
+
+# type Skill {
+#   skill: String!
+#   level: Int!
+# }
+
+
+# # possible project section
+
+# type Project {
+#   image: String!
+#   title: String!
+#   languages: [Skill!]!
+# }
