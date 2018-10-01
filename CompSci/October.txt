@@ -1,0 +1,33 @@
+Tentative study plan for October:
+
+1. Merge Sort
+2. Quick Sort
+3. Data Structures
+4. Array Lists
+5. Linked Lists
+6. Binary Search Trees
+7. AVL/Rotation
+8. AVL/Rotation cont.
+9. Hash tables
+10. Functional - overview/map
+11. Functional - reduce/filter
+12. Review
+13. Intro/setup new course
+14. Bloom filters - diagram
+15. Bloom filters - caveats and hash functions
+16. Bloom flilters - exercise
+17. Tree Traversal
+18. Depth first exercise
+19. Breadth first exercise
+20. Tree queue
+21. Pathfinding
+22. Pathfinding cont.
+23. Graphs
+24. Graphs cont.
+25. Maze
+26. Maze cont.
+27. Tries
+28. Searching in an Array
+29. Heap Sort
+30. Radix Sort
+31. Review 
