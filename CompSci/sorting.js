@@ -78,7 +78,11 @@ function mergeSort(nums) {
     const length = nums.length;
     const middle = Math.floor(length / 2);
     const left = nums.slice(0, middle); // slice out the first half of the array
-    const right = nums.slice(middle); // slice out the second half of the array
+    const right = nums.slice(middle, length); // slice out the second half of the array
+
+    // can also use the below instead of calling the recursion in the return
+    // const sortedLeft = mergeSort(left);
+    // const sortedRight = mergeSort(right);
 
     return merge(mergeSort(left), mergeSort(right)); // return calling merge which is below, 
 };                                                  // and the recursive function mergeSort, 
