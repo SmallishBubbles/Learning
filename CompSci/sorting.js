@@ -167,7 +167,7 @@ function quickSort(nums){
         }
     }
 
-    return [...quickSort(left), pivot, ...quickSort(right)];
+    return quickSort(left).concat(pivot, quickSort(right));
 
 }
 
