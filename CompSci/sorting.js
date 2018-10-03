@@ -106,3 +106,69 @@ function merge(left, right) { //merge takes in both the left and right arrays
 }; // remember that this function is being recursively called, within the mergeSort array, so this will happen until we get back to one long array, now sorted!
 
 mergeSort([10, 5, 3, 8, 2, 6, 4, 7, 9, 1])
+
+
+
+
+// Sorting method 4
+// Quick Sort
+
+// The basic gist is that you take the last element in the list and call that the pivot. 
+// Everything that's smaller than the pivot gets put into a "left" list and everything 
+// that's greater get's put in a "right" list. You then call quick sort on the left and right 
+// lists independently (hence the recursion.) After those two sorts come back, you concatenate 
+// the sorted left list, the pivot, and then the right list (in that order.) The base case is 
+// when you have a list of length 1 or 0, where you just return the list given to you.
+
+
+// [4,9,3,5] list
+// -> 5 is made the pivot since it's the last in the array
+// -> divide list into two lists, [4,3] and [9]
+// -> call quicksort on those two lists
+
+// [4, 3]
+// -> 3 is pivot
+// -> call quicksort on [] and [4]
+// -> those both return as is as they are the base case of length 0 or 1
+// -> concat [], 3, and [4]
+// -> return [3,4]
+
+// [9]
+// -> returns as this it is a base case of length 1
+
+// (back into the original function call)
+// -> call concat on [3,4], 5, and [9]
+// -> return [3,4,5,9]
+
+
+
+// Quicksort should grab a pivot from the end and then separate the list (not including the pivot)
+// into two lists, smaller than the pivot and larger than the pivot.Call quickSort on both of those
+// lists independently.Once those two lists come back sorted, concatenate the "left"(or smaller numbers)
+// list, the pivot, and the "right"(or larger numbers) list and return that.The base case is when quickSort
+// is called on a list with length less - than - or - equal - to 1. In the base case, just return the array given.
+
+
+
+function quickSort(nums){
+    if (nums.length < 2){
+        return nums;
+    }
+
+    let pivot = nums[nums.length-1];
+    let left = []
+    let right = []
+
+    for (var i=0; i<nums.length-1; i++){
+        if (nums[i] <= pivot) {
+            left.push(nums[i])
+        } else {
+            right.push(nums[i])
+        }
+    }
+
+    return [...quickSort(left), pivot, ...quickSort(right)];
+
+}
+
+quickSort([10, 5, 3, 8, 2, 6, 4, 7, 9, 1]);
