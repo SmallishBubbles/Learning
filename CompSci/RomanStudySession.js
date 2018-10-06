@@ -24,7 +24,6 @@ descendingOrder(123456789)
 
 
 
-
 function descendingOrder2(n) {
     let digits = n.toString().split("").map(Number);
     digits.sort(function (a, b) { return b - a });
