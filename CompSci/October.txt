@@ -1,10 +1,10 @@
 Tentative study plan for October:
 
-1. Merge Sort
-2. Quick Sort
-3. Data Structures
-4. Array Lists
-5. Linked Lists
+1. Merge Sort ✅
+2. Quick Sort ✅
+3. Data Structures ✅
+4. Array Lists ✅
+5. Linked Lists ✅
 6. Binary Search Trees
 7. AVL/Rotation
 8. AVL/Rotation cont.

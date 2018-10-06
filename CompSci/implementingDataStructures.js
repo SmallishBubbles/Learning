@@ -188,3 +188,69 @@ class Node { // node class
         this.next = null; // set the next to null
     }
 }
+
+
+
+
+
+
+// --------------- Binary Search Tree (BST --------------
+
+// Binary Search Tree!
+
+/* 
+
+Make a BST. The Tree class will have to keep track of a root which will be the first item added
+to your tree. From there, if the item is less than the value of that node, it will go into its left subtree
+and if greater it will go to the right subtree.
+
+*/
+
+
+class Tree {
+    constructor() {
+        this.root = null;
+    }
+    toObject() {
+        return this.root;
+    }
+    add(value) {
+        if (this.root === null) {
+            this.root = new Node(value);
+        }
+        else {
+            let current = this.root; // let current equal the root
+            while (true) { // keep running until we specifically ask to break out
+                if (current.value > value) { // if the root is larger than our new value
+                    // go left
+                    if (current.left) { // if the left node to our current node already exists
+                        current = current.left; // move to that node as our current node
+                    }
+                    else { // if the left node to our current node does not exist
+                        current.left = new Node(value); // create a new node there with our value
+                        break; // break the loop
+                    }
+                }
+                else { // if the root is smaller or equal to our new value
+                    // go right
+                    if (current.right) {
+                        current = current.right;
+                    }
+                    else {
+                        current.right = new Node(value);
+                        break;
+                    }
+                }
+            }
+        }
+        return this;
+    }
+}
+
+class Node {
+    constructor(value, left = null, right = null) { // set default parameters so that if nothing is passed in it will equal null
+        this.value = value;
+        this.left = left;
+        this.right = right;
+    }
+}
