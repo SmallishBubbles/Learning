@@ -194,7 +194,7 @@ class Node { // node class
 
 
 
-// --------------- Binary Search Tree (BST --------------
+// --------------- Binary Search Tree (BST) --------------
 
 // Binary Search Tree!
 
@@ -254,3 +254,69 @@ class Node {
         this.right = right;
     }
 }
+
+
+
+// --------------- AVL Tree (balanced BST) --------------
+
+// AVL trees actively check if the tree is balanced after each add. 
+// This happens recursively up the branches, checking to see the difference in length of each branch (right/left) 
+// if the difference is not greater than 1, the tree is balanced at that point
+// if the difference is more than that, we performa a rotation
+
+
+
+
+/*
+  AVL Tree
+  
+  
+  Make a Tree class and a Node class as well (it will help _a lot_ with AVL trees) Whereas with BSTs we 
+  could get away with most of the logic living in the Tree class, that will be a lot tougher with AVL
+  trees dues how the function calls must be recursive in order to get the balancing correct.
+  
+  Tree must a method called add that takes a value and adds it to the tree and then correctly balances the
+  tree. There is only one correct structure for any given order of adding numbers and the unit tests enforce
+  that structure.
+
+
+5
+ \
+  8
+
+-> Currently valid AVL tree
+-> .add called with 9
+
+5 - node A
+ \
+  8 - node B
+   \
+    9 - node C
+
+(on the way up from the recursion)
+-> check balance of node C: left height is 0, right height is 0, balanced
+-> check balance of node B: left height is 0, right height is 1, balanced
+-> check balance of node A: left height is 0, right height is 2
+   unbalanced, right heavy, child is right heavy
+
+-> perform right rotation
+-> swap the values of nodes A and B
+-> make node B the left child of node A
+-> make node C the right child of node A
+-> move node B's right child to its left child
+   (in this case they're both null)
+-> make node A's _original_ left child
+   (which was null in this case) the left child of node B
+-> update the heights of all the nodes involved
+
+      8 - node A
+   /     \
+  5        9
+node B   node C
+
+
+    
+*/
+
+// code exercise
+
