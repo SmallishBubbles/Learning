@@ -320,3 +320,130 @@ node B   node C
 
 // code exercise
 
+class Tree {
+    constructor() {
+        this.root = null; // start our tree with a null root
+    }
+    add(value) { // to add a node/value
+        if (!this.root) { // if there is no root
+            this.root = new Node(value); // add a new node at the root
+        }
+        else { // otherwise
+            this.root.add(value); // call the add function inside of our root node
+        }
+    }
+    toJSON() { // return data in json format
+        return JSON.stringify(this.root.serialize(), null, 4);
+    }
+    toObject() { // return data as an object
+        return this.root.serialize();
+    }
+}
+
+class Node {
+    constructor(value = null, left = null, right = null) { // to make a new node we set the base values to null
+        this.left = left; // if they give us a left value, add it (otherwise null)
+        this.right = right; // if they give us a right value, add it (otherwise null)
+        this.value = value; // if they give us a value, add it (otherwise null)
+        this.height = 1; // set the basic height to one
+    }
+    add(value) { // add a new node to the tree
+
+        if (value < this.value) { // if the value is smaller than the node we're in
+            // go left
+
+            if (this.left) { // if left already exists
+                this.left.add(value); // recursively call the add function on that node
+            }
+            else { // if not
+                this.left = new Node(value); // add the new value to the left of the node we're in
+            }
+            if (!this.right || this.right.height < this.left.height) { // if there is no right node at all, or the height of right is less than height of left
+                this.height = this.left.height + 1; // add one to our height
+            }
+        }
+        else { // otherwise
+            // go right
+
+            if (this.right) {
+                this.right.add(value);
+            }
+            else {
+                this.right = new Node(value);
+            }
+            if (!this.left || this.right.height > this.left.height) {
+                this.height = this.right.height + 1;
+            }
+        }
+        this.balance(); // call the balance function
+    }
+    balance() {
+        const rightHeight = (this.right) ? this.right.height : 0; // check for the height of the right (if this.right exists, return the height of right, otherwise return zero)
+        const leftHeight = (this.left) ? this.left.height : 0; // check for the height of the left
+
+        console.log(this.value, leftHeight, rightHeight);
+
+        if (leftHeight > rightHeight + 1) { // if the height of left is more than the height of right plus one
+            const leftRightHeight = (this.left.right) ? this.left.right.height : 0; // check for the heights of that one's nodes
+            const leftLeftHeight = (this.left.left) ? this.left.left.height : 0;
+
+            if (leftRightHeight > leftLeftHeight) { // if the left value of the right node is more than the left left
+                this.left.rotateRR(); // do a right rotation
+            }
+
+            this.rotateLL(); // do a left rotation
+        }
+        else if (rightHeight > leftHeight + 1) { // same on other side
+            const rightRightHeight = (this.right.right) ? this.right.right.height : 0;
+            const rightLeftHeight = (this.right.left) ? this.right.left.height : 0;
+
+            if (rightLeftHeight > rightRightHeight) {
+                this.right.rotateLL();
+            }
+
+            this.rotateRR(); // do a right rotation
+        }
+    }
+    rotateRR() { // right rotation
+        const valueBefore = this.value; // remember the value of the node we're on
+        const leftBefore = this.left; // remember the node to the left
+        this.value = this.right.value; // change the value of the node we're on to the value of the node to our right
+        this.left = this.right; // change the node to the left of us to the node on the right of us
+        this.right = this.right.right; // change the node on the right of us to the node on its right
+        this.left.right = this.left.left; // change left's right to left's left
+        this.left.left = leftBefore; // change the node on our left's left to the node that was originally on our left
+        this.left.value = valueBefore; // change the value of our left node to the value that used to be ours
+        this.left.updateInNewLocation(); // call update to set new heights on our left
+        this.updateInNewLocation(); // and also on ourself
+    }
+    rotateLL() { // left rotation
+        const valueBefore = this.value;
+        const rightBefore = this.right;
+        this.value = this.left.value;
+        this.right = this.left;
+        this.left = this.left.left;
+        this.right.left = this.right.right;
+        this.right.right = rightBefore;
+        this.right.value = valueBefore;
+        this.right.updateInNewLocation();
+        this.updateInNewLocation();
+    }
+    updateInNewLocation() {
+        if (!this.right && !this.left) { // if there is no right and there is no left
+            this.height = 1; // set our height to one
+        }
+        else if (!this.right || (this.left && this.right.height < this.left.height)) { // if there is no right but there is a left and the right height is less than the left height
+            this.height = this.left.height + 1; // set our height to the left height plus one
+        }
+        else { //if (!this.left || this.right.height > this.left.height)
+            this.height = this.right.height + 1; // otherwise set the height to our right height plus one
+        }
+    }
+    serialize() { // see everything in the tree
+        const ans = { value: this.value };
+        ans.left = this.left === null ? null : this.left.serialize();
+        ans.right = this.right === null ? null : this.right.serialize();
+        ans.height = this.height;
+        return ans;
+    }
+}
