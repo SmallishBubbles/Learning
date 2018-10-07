@@ -381,13 +381,11 @@ class Node {
         const rightHeight = (this.right) ? this.right.height : 0; // check for the height of the right (if this.right exists, return the height of right, otherwise return zero)
         const leftHeight = (this.left) ? this.left.height : 0; // check for the height of the left
 
-        console.log(this.value, leftHeight, rightHeight);
-
-        if (leftHeight > rightHeight + 1) { // if the height of left is more than the height of right plus one
+        if (leftHeight > rightHeight + 1) { // if the height of left is more than the height of right plus one (if we are out of balance and need to be rotated)
             const leftRightHeight = (this.left.right) ? this.left.right.height : 0; // check for the heights of that one's nodes
-            const leftLeftHeight = (this.left.left) ? this.left.left.height : 0;
+            const leftLeftHeight = (this.left.left) ? this.left.left.height : 0; // check for left height
 
-            if (leftRightHeight > leftLeftHeight) { // if the left value of the right node is more than the left left
+            if (leftRightHeight > leftLeftHeight) { // if our rotation is right heavy
                 this.left.rotateRR(); // do a right rotation
             }
 
