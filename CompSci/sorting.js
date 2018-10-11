@@ -1,5 +1,5 @@
 // Sorting method 1:
-//  Bubble Sort
+//  Bubble Sort - loop through swapping two at a time. Stop when no more are swapped
 
 // Bubble sort works by comparing two adjacent numbers next to each other and then
 // swapping their places if the smaller index's value is larger than the larger
@@ -31,7 +31,7 @@ bubbleSort([10, 5, 3, 8, 2, 6, 4, 7, 9, 1]);
 
 
 // Sorting method 2:
-// Insertion Sort
+// Insertion Sort - loop through starting with one sorted item and then comparing each new one to the sorted ones so far
 
 // The idea here is that the beginning of your list is sorted and the everything else is assumed to be an unsorted mess.
 // The outer loop goes over the whole list, the index of which signifies where the "sorted" part of the list is.The inner
@@ -61,7 +61,7 @@ insertionSort([10, 5, 3, 8, 2, 6, 4, 7, 9, 1])
 
 
 // Sorting method 3:
-// Merge sort
+// Merge sort - recursively devide in half until you have units of one, then return up sewing in the smallest from each sorted side first
 
 // The basic gist of merge sort is that you're going to take your big list, and first divide down in 
 // two half size lists and recursively call merge sort on those smaller list, which in turn will do the 
@@ -111,7 +111,7 @@ mergeSort([10, 5, 3, 8, 2, 6, 4, 7, 9, 1])
 
 
 // Sorting method 4
-// Quick Sort
+// Quick Sort - recursively separate into smaller and larger than a chosen pivot value then return smaller, pivot, larger as you go back up
 
 // The basic gist is that you take the last element in the list and call that the pivot. 
 // Everything that's smaller than the pivot gets put into a "left" list and everything 
