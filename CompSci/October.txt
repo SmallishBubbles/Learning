@@ -1,18 +1,20 @@
 Tentative study plan for October:
+Study material from front end masters 4 semesters of comp science in 5 hours parts 1 and 2 
+by Brian Holt
 
 1. Merge Sort ✅
 2. Quick Sort ✅
 3. Data Structures ✅
 4. Array Lists ✅
 5. Linked Lists ✅
-6. Binary Search Trees
-7. AVL/Rotation
-8. AVL/Rotation cont.
-9. Hash tables
-10. Functional - overview/map
-11. Functional - reduce/filter
-12. Review
-13. Intro/setup new course
+6. Binary Search Trees ✅
+7. AVL/Rotation ✅
+8. AVL/Rotation cont. ✅
+9. Hash tables ✅
+10. Functional - overview/map ✅
+11. Functional - reduce/filter ✅
+12. Review ✅
+13. Intro/setup new course ✅
 14. Bloom filters - diagram
 15. Bloom filters - caveats and hash functions
 16. Bloom flilters - exercise
