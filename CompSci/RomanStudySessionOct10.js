@@ -126,4 +126,5 @@ function findOdd2(A) {
             count = 0; // reset the count
         }
     }
-    return answer;  
+    return answer
+}

@@ -15,10 +15,10 @@ by Brian Holt
 11. Functional - reduce/filter ✅
 12. Review ✅
 13. Intro/setup new course ✅
-14. Bloom filters - diagram
-15. Bloom filters - caveats and hash functions
-16. Bloom flilters - exercise
-17. Tree Traversal
+14. Bloom filters - diagram ✅
+15. Bloom filters - caveats and hash functions ✅
+16. Bloom flilters - exercise ✅
+17. Tree Traversal overview ✅
 18. Depth first exercise
 19. Breadth first exercise
 20. Tree queue
