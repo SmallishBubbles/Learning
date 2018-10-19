@@ -19,9 +19,9 @@ by Brian Holt
 15. Bloom filters - caveats and hash functions ✅
 16. Bloom flilters - exercise ✅
 17. Tree Traversal overview ✅
-18. Depth first exercise
-19. Breadth first exercise
-20. Tree queue
+18. Depth first exercise ✅
+19. Breadth first exercise ✅
+20. Tree queue ✅
 21. Pathfinding
 22. Pathfinding cont.
 23. Graphs
