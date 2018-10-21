@@ -22,10 +22,10 @@ by Brian Holt
 18. Depth first exercise ✅
 19. Breadth first exercise ✅
 20. Tree queue ✅
-21. Pathfinding
-22. Pathfinding cont.
-23. Graphs
-24. Graphs cont.
+21. weekend trip
+22. weekend trip
+23. Pathfinding
+24. Graphs
 25. Maze
 26. Maze cont.
 27. Tries
