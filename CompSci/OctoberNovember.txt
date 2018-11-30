@@ -1,4 +1,4 @@
-Tentative study plan for October:
+Tentative study plan for October/November
 Study material from front end masters 4 semesters of comp science in 5 hours parts 1 and 2 
 by Brian Holt
 
@@ -22,14 +22,12 @@ by Brian Holt
 18. Depth first exercise ✅
 19. Breadth first exercise ✅
 20. Tree queue ✅
-21. weekend trip
-22. weekend trip
-23. Pathfinding
-24. Graphs
-25. Maze
-26. Maze cont.
-27. Tries
-28. Searching in an Array
-29. Heap Sort
-30. Radix Sort
-31. Review 
+21. Pathfinding (partial)
+22. Graphs
+23. Maze
+24. Maze cont.
+25. Tries
+26. Searching in an Array
+27. Heap Sort
+28. Radix Sort
+29. Review 
