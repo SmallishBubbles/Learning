@@ -1,6 +1,6 @@
 body {
   background-image: url(http://www.wildtextures.com/wp-content/uploads/2011/10/wildtextures-green-leaf-original-file.jpg);
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   background-size: 100vw;
 }
 
@@ -52,5 +52,21 @@ h4 {
 }
 
 
+#home {
+  background-color: white;
+  border-radius: 3px;
+  margin: 10px;
+  width: 200px;
+  height: auto;
+  text-align: center;
+  font-size: 1.5em;
+  padding: 3px 10px;
+}
 
+#home:hover {
+  background-color: lightgrey;
+}
 
+#linkHome {
+  text-decoration: none;
+}

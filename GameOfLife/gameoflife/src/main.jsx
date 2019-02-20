@@ -126,6 +126,11 @@ class Main extends React.Component {
     render() {
         return (
             <div>
+                <a href="http://marisha-hoza-portfolio.surge.sh/" id="linkHome">
+                  <div>
+                    <p id="home"> Return to Portfolio </p>
+                  </div>
+                </a>
                 <h1> The Game of Life </h1>
                 <Buttons
                     playButton={this.playButton}
@@ -140,6 +145,13 @@ class Main extends React.Component {
                 <Grid gridFull={this.state.gridFull} rows={this.rows} cols={this.cols} selectBox={this.selectBox} />
 
                 <h2> Generations: {this.state.generation}</h2>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <h4>React game of life tutorial by freeCodeCamp</h4>
             </div>
         );
     }
