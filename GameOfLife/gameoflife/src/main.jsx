@@ -131,7 +131,7 @@ class Main extends React.Component {
                     <p id="home"> Return to Portfolio </p>
                   </div>
                 </a>
-                <h1> The Game of Life </h1>
+                <h1> Conway's Game of Life </h1>
                 <Buttons
                     playButton={this.playButton}
                     pauseButton={this.pauseButton}
@@ -145,12 +145,19 @@ class Main extends React.Component {
                 <Grid gridFull={this.state.gridFull} rows={this.rows} cols={this.cols} selectBox={this.selectBox} />
 
                 <h2> Generations: {this.state.generation}</h2>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
+                <div id="rules">
+                  <h4>Rules:</h4>
+                  <br/>
+                  <p>
+                    The Game of Life is a two-dimensional grid of square cells, each of which is in one of two possible states: alive or dead. Every cell interacts with its eight neighbours, which are the cells that are horizontally, vertically, or diagonally adjacent. At each step in time, the following transitions occur:
+                  </p>
+                  <ol>
+                    <li>Any live cell with fewer than two live neighbors dies, as if by underpopulation.</li>
+                    <li>Any live cell with two or three live neighbors lives on to the next generation.</li>
+                    <li>Any live cell with more than three live neighbors dies, as if by overpopulation.</li>
+                    <li>Any dead cell with exactly three live neighbors becomes a live cell, as if by reproduction.</li>
+                  </ol>
+                </div>
                 <h4>React game of life tutorial by freeCodeCamp</h4>
             </div>
         );

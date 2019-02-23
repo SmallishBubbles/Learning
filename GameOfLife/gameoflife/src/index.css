@@ -51,7 +51,6 @@ h4 {
   margin-top: 0px;
 }
 
-
 #home {
   background-color: white;
   border-radius: 3px;
@@ -69,4 +68,14 @@ h4 {
 
 #linkHome {
   text-decoration: none;
+}
+
+#rules {
+  width: 60%;
+  height: auto;
+  color: white;
+  margin: auto;
+  margin-top: 3em;
+  margin-bottom: 4em;
+  font-size: 1.2em;
 }
